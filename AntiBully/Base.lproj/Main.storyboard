@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prevent cyberbullying" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h7-4o-bp1">
-                                <rect key="frame" x="54" y="169" width="306" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prevent cyberbullying" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="8h7-4o-bp1">
+                                <rect key="frame" x="20" y="169" width="374" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -30,9 +30,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Xdi-VI-Lds"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="go"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS8-ou-hYV" customClass="RoundedButton" customModule="AntiBully" customModuleProvider="target">
                                 <rect key="frame" x="147" y="345" width="120" height="36"/>
@@ -51,11 +51,12 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="QS8-ou-hYV" firstAttribute="top" secondItem="hEZ-ZL-PhO" secondAttribute="bottom" constant="40" id="7EO-7N-wYf"/>
-                            <constraint firstItem="8h7-4o-bp1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GjA-Bp-w3m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8h7-4o-bp1" secondAttribute="trailing" constant="20" id="7Oh-N6-kLm"/>
                             <constraint firstItem="8h7-4o-bp1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="KRU-ir-cFo"/>
                             <constraint firstItem="hEZ-ZL-PhO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NVp-8A-60a"/>
                             <constraint firstItem="hEZ-ZL-PhO" firstAttribute="top" secondItem="8h7-4o-bp1" secondAttribute="bottom" constant="50" id="eJb-C6-m40"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hEZ-ZL-PhO" secondAttribute="trailing" constant="20" id="h6l-6X-grI"/>
+                            <constraint firstItem="8h7-4o-bp1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hQA-og-xUB"/>
                             <constraint firstItem="QS8-ou-hYV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oVN-oh-ESu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
