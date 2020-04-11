@@ -12,6 +12,10 @@
 		4803687C24413F2B00A4C861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4803687A24413F2B00A4C861 /* Main.storyboard */; };
 		4803687E24413F2F00A4C861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4803687D24413F2F00A4C861 /* Assets.xcassets */; };
 		4803688124413F2F00A4C861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4803687F24413F2F00A4C861 /* LaunchScreen.storyboard */; };
+		48B84BC6244235C2008553D9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B84BC5244235C2008553D9 /* ViewModel.swift */; };
+		48B84BC8244236AA008553D9 /* BullyClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 48B84BC7244236AA008553D9 /* BullyClassifier.mlmodel */; };
+		48FCE92E24420E08000C9F27 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FCE92D24420E08000C9F27 /* RoundedButton.swift */; };
+		48FCE93124420FC7000C9F27 /* Sentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FCE93024420FC7000C9F27 /* Sentiment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		4803687D24413F2F00A4C861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4803688024413F2F00A4C861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4803688224413F2F00A4C861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B84BC5244235C2008553D9 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		48B84BC7244236AA008553D9 /* BullyClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BullyClassifier.mlmodel; sourceTree = "<group>"; };
+		48FCE92D24420E08000C9F27 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		48FCE93024420FC7000C9F27 /* Sentiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		4803687524413F2B00A4C861 /* AntiBully */ = {
 			isa = PBXGroup;
 			children = (
+				48B84BC7244236AA008553D9 /* BullyClassifier.mlmodel */,
+				48FCE92B24420DEA000C9F27 /* Model */,
+				48FCE92A24420DE4000C9F27 /* View */,
+				48FCE92F24420FA9000C9F27 /* ViewModel */,
+				48FCE92924420DD7000C9F27 /* Controller */,
 				4803687624413F2B00A4C861 /* AppDelegate.swift */,
-				4803687824413F2B00A4C861 /* ViewController.swift */,
 				4803687A24413F2B00A4C861 /* Main.storyboard */,
 				4803687D24413F2F00A4C861 /* Assets.xcassets */,
 				4803687F24413F2F00A4C861 /* LaunchScreen.storyboard */,
 				4803688224413F2F00A4C861 /* Info.plist */,
 			);
 			path = AntiBully;
+			sourceTree = "<group>";
+		};
+		48FCE92924420DD7000C9F27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4803687824413F2B00A4C861 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48FCE92A24420DE4000C9F27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48FCE92D24420E08000C9F27 /* RoundedButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48FCE92B24420DEA000C9F27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48FCE93024420FC7000C9F27 /* Sentiment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48FCE92F24420FA9000C9F27 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				48B84BC5244235C2008553D9 /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B84BC6244235C2008553D9 /* ViewModel.swift in Sources */,
 				4803687924413F2B00A4C861 /* ViewController.swift in Sources */,
+				48FCE93124420FC7000C9F27 /* Sentiment.swift in Sources */,
+				48FCE92E24420E08000C9F27 /* RoundedButton.swift in Sources */,
+				48B84BC8244236AA008553D9 /* BullyClassifier.mlmodel in Sources */,
 				4803687724413F2B00A4C861 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
